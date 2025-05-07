@@ -1,11 +1,6 @@
 #
-# Create Storage Pool
+# Create Custom Volume
 #
-
-resource "lxd_storage_pool" "pool" {
-  name   = "local"
-  driver = "zfs"
-}
 
 # Create custom volume.
 resource "lxd_volume" "volume" {
